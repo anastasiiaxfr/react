@@ -1,0 +1,117 @@
+$white: #fff
+$main: #1f98f4
+$dark: #252e48
+$dark1: rgba(56, 125, 255, 0.17)
+$dark2: rgba(56, 125, 255, 0.017)
+
+h1 
+  text-align: center
+
+
+.fade-img 
+  animation-name: fade-img
+  animation-duration: 2s
+
+
+.cards 
+  padding: 4rem
+  background: $white
+
+  &__container 
+    display: flex
+    flex-flow: column
+    align-items: center
+    max-width: 1120px
+    width: 90%
+    margin: 0 auto
+
+  &__wrapper 
+    position: relative
+    margin: 50px 0 45px
+
+  &__items 
+    margin-bottom: 24px
+
+  &__item 
+    display: flex
+    flex: 1
+    margin: 0 1rem
+    border-radius: 10px
+
+  &__link 
+    display: flex
+    flex-flow: column
+    width: 100%
+    box-shadow: 0 6px 20px $dark1
+    filter: drop-shadow(0 6px 20px $dark2)
+    border-radius: 10px
+    overflow: hidden
+    text-decoration: none
+
+  &__pic-wrap 
+    position: relative
+    width: 100%
+    padding-top: 67%
+    margin: 0
+    overflow: hidden
+
+    &::after 
+      content: attr(data-category)
+      position: absolute
+      bottom: 0
+      max-width: calc(100% - 60px)
+      margin-left: 10px
+      padding: 6px 8px
+      font-size: 12px
+      font-weight: 700
+      color: $white
+      background-color: $main
+      box-sizing: border-box
+
+  &__img 
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    display: block
+    width: 100%
+    max-width: 100%
+    height: 100%
+    max-height: 100%
+    margin: 0
+    object-fit: cover
+    transition: all 0.2s linear
+
+    &:hover 
+      transform: scale(1.1)
+
+  &__info 
+    padding: 20px 30px 30px
+
+  &__text 
+    color: $dark
+    font-size: 18px
+    line-height: 24px
+
+
+@media only screen and (min-width: 1200px) 
+  .content__blog__container 
+    width: 84%
+  
+
+@media only screen and (min-width: 1024px) 
+  .cards__items 
+    display: flex
+  
+
+@media only screen and (max-width: 1024px) 
+  .cards__item 
+    margin-bottom: 2rem
+  
+  
+@media screen and (max-width: 768px) 
+  .cards
+    padding: 30px 0
+    &__items
+      padding: 0

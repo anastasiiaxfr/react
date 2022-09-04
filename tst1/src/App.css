@@ -1,0 +1,57 @@
+i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+  
+  .home,
+  .services,
+  .products,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  .services {
+    background-image: url('../public/img/img-2.jpg');
+    background-position: center;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .products {
+    background-image: url('../public/img/img-1.jpg');
+    background-position: center;
+    background-color: #000;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .sign-up {
+    background-image: url('../public/img/img-8.jpg');
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    margin: 0;
+  }
